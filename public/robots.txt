@@ -1,0 +1,8 @@
+# JuTech — https://jutech.co
+# Allow all crawlers; point to sitemap
+
+User-agent: *
+Allow: /
+
+# Sitemap location (absolute URL)
+Sitemap: https://jutech.co/sitemap.xml
