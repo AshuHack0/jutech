@@ -9,5 +9,11 @@ export default defineConfig({
   build: {
     outDir: process.env.BUILD_OUT_DIR || 'dist',
   },
+  server: {
+    allowedHosts: ['jutech.onrender.com', 'localhost'],
+  },
+  preview: {
+    allowedHosts: ['jutech.onrender.com', 'localhost'],
+  },
   plugins: [react(), tailwindcss()],
 })
