@@ -10,7 +10,7 @@ import { fileURLToPath } from 'node:url'
 import puppeteer from 'puppeteer-core'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
-const DIST = path.join(__dirname, '..', 'dist')
+const DIST = path.join(__dirname, '..', process.env.BUILD_OUT_DIR || 'dist')
 const PORT = 37542
 
 const SYSTEM_CHROME_PATHS = [
