@@ -1,12 +1,13 @@
 /**
  * Post-build prerender script for Homepage SEO.
  * Serves the built app, captures fully-rendered HTML with Puppeteer, and overwrites dist/index.html.
+ * On Vercel uses @sparticuz/chromium (serverless Chromium); locally uses system Chrome.
  */
 import http from 'node:http'
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
-import puppeteer from 'puppeteer'
+import puppeteer from 'puppeteer-core'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const DIST = path.join(__dirname, '..', 'dist')
@@ -24,7 +25,28 @@ function getChromeExecutable() {
   for (const p of SYSTEM_CHROME_PATHS) {
     if (fs.existsSync(p)) return p
   }
-  return undefined
+  return process.env.PUPPETEER_EXECUTABLE_PATH || undefined
+}
+
+/** Launch options: use @sparticuz/chromium on Vercel, system Chrome locally. */
+async function getLaunchOptions() {
+  if (process.env.VERCEL === '1') {
+    const chromium = await import('@sparticuz/chromium')
+    const executablePath = await chromium.default.executablePath()
+    return {
+      executablePath,
+      args: chromium.default.args,
+      headless: 'shell', // required for @sparticuz/chromium headless-shell build
+    }
+  }
+  const executablePath = getChromeExecutable()
+  if (!executablePath) {
+    console.error(
+      '[prerender] No Chrome found. Install Chrome, or set PUPPETEER_EXECUTABLE_PATH, or run: npx puppeteer browsers install chrome'
+    )
+    process.exit(1)
+  }
+  return { executablePath, headless: true }
 }
 
 const MIME = {
@@ -80,9 +102,7 @@ async function prerender() {
   const server = await createServer()
   const baseUrl = `http://localhost:${PORT}`
 
-  const executablePath = getChromeExecutable()
-  const launchOptions = { headless: true }
-  if (executablePath) launchOptions.executablePath = executablePath
+  const launchOptions = await getLaunchOptions()
 
   let browser
   try {
