@@ -8,8 +8,7 @@ const HeroSection = () => {
     <div className="md:h-[calc(100vh - 20px)] h-fit relative md:static">
       <motion.img
         src={`/svgs/Hero.svg`}
-        alt=""
-        role="presentation"
+        alt="JuTech hero - Build Beyond Limits illustration"
         className="absolute hidden md:block right-0 md:-top-50  top-0 md:left-30 left-0 -z-20"
         initial={{ top: -200, left: 120, opacity: 0 }}
         animate={{

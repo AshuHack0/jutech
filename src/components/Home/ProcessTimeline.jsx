@@ -175,13 +175,13 @@
 //                     step.id === activeStep && "border-r-[2px] border-[#CC41E4]"
 //                   }`}
 //                 >
-//                   <h1
+//                   <h2
 //                     className={`font-medium text-[36px] px-1 mb-4 ${
 //                       step.id !== activeStep && "text-[#E6E6E6]"
 //                     }`}
 //                   >
 //                     0{idx + 1}
-//                   </h1>
+//                   </h2>
 //                 </div>
 //                 <div className="col-span-4 px-4">
 //                   <div>
@@ -241,13 +241,13 @@
 //                     step.id === activeStep && "border-r-[2px] border-[#CC41E4]"
 //                   }`}
 //                 >
-//                   <h1
+//                   <h2
 //                     className={`font-medium text-[36px] px-1 mb-4 ${
 //                       step.id !== activeStep && "text-[#E6E6E6]"
 //                     }`}
 //                   >
 //                     0{idx + 1}
-//                   </h1>
+//                   </h2>
 //                 </div>
 //                 <div className="col-span-4 px-4">
 //                   <div>
@@ -475,13 +475,13 @@ const ProcessTimeline = () => {
                     step.id === activeStep && "border-r-[2px] border-[#CC41E4]"
                   }`}
                 >
-                  <h1
+                  <h2
                     className={`font-medium h-full w-full text-[30px] flex items-center justify-center ${
                       step.id !== activeStep && "text-[#E6E6E6]"
                     }`}
                   >
                     0{idx + 1}
-                  </h1>
+                  </h2>
                 </div>
                 <div className="col-span-5 text-xl flex-1 pl-8">
                   <div className="w-fit">

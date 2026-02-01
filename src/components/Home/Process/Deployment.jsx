@@ -38,7 +38,7 @@ export default function Deployment() {
         <motion.img
           src="\gradients\gradient2.svg"
           className="w-full"
-          alt=""
+          alt="Deployment phase - decorative gradient"
           animate={{
             y: [30, -30, 30],
             transition: {

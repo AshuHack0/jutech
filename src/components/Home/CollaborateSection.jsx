@@ -590,7 +590,7 @@ export default function CollaborateSection() {
                   <div>
                     <motion.img
                       src={card.img}
-                      alt=""
+                      alt={`${card.title} - subsidiary company logo`}
                       className={`object-contain ${card.imgHeight} mb-2`}
                       initial={{ opacity: 0, scale: 0 }}
                       animate={{

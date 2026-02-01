@@ -181,7 +181,7 @@ export default function Gathering() {
         <motion.img
           src="\gradients\gradient2.svg"
           className="w-full"
-          alt=""
+          alt="Requirements gathering phase - decorative gradient"
           animate={{
             y: [30, -30, 30],
             transition: {

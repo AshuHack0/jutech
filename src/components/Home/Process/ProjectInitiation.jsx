@@ -129,7 +129,7 @@ const ProjectInitiation = ({ data }) => {
         <motion.img
           src="\gradients\gradient2.svg"
           className="w-full"
-          alt=""
+          alt="Project initiation phase - decorative gradient"
           animate={{
             y: [30, -30, 30],
             transition: {

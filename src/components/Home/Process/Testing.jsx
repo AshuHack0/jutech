@@ -74,7 +74,7 @@ export default function Testing() {
               style={{ zIndex: data.length - idx }}
               layoutId={item.id}
             >
-              <h1 className="text-[40px] font-normal text-white">{item.id}</h1>
+              <h2 className="text-[40px] font-normal text-white">{item.id}</h2>
               <p className="text-[40px] font-normal text-white">{item.title}</p>
             </motion.div>
           ))}
@@ -91,7 +91,7 @@ export default function Testing() {
         <motion.img
           src="\gradients\gradient2.svg"
           className="w-full"
-          alt=""
+          alt="Software testing phase - decorative gradient"
           animate={{
             y: [30, -30, 30],
             transition: {

@@ -80,7 +80,7 @@ export default function WorkflowDiagram() {
         <motion.img
           src="\gradients\gradient2.svg"
           className="w-full"
-          alt=""
+          alt="Software development workflow diagram"
           animate={{
             y: [30, -30, 30],
             transition: {

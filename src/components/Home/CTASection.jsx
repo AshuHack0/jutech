@@ -283,7 +283,7 @@ const CTASection = ({ isVisibleCTASection, setIsVisibleCTASection }) => {
                 },
               }}
             >
-              <h1 className="font-normal text-[48px]">Contact Us</h1>
+              <h2 className="font-normal text-[48px]">Contact Us</h2>
               <p className="text-[20px] md:w-2/3 font-normal text-[#0C0E12] mt-[15px]">
                 The Future of Your Financial Solutions and Strategies is not
                 just an exciting and transformative concept it represents a
@@ -433,7 +433,7 @@ const CTASection = ({ isVisibleCTASection, setIsVisibleCTASection }) => {
           {[...techLogos, ...techLogos].map((logo, idx) => (
             <div key={idx} className="md:w-[90px] w-10 aspect-square">
               <div className="rounded-full w-full rotate-90 aspect-square bg-[#F5F5F5] border-[4px] border-white flex items-center justify-center md:p-4 p-1">
-                <img src={logo} className="w-full" alt="" />
+                <img src={logo} className="w-full" alt="Technology stack logo" />
               </div>
             </div>
           ))}
@@ -465,7 +465,7 @@ const CTASection = ({ isVisibleCTASection, setIsVisibleCTASection }) => {
           {[...techLogoss, ...techLogoss].map((logo, idx) => (
             <div key={idx} className="md:w-[90px] w-10 aspect-square">
               <div className="rounded-full w-full rotate-90 aspect-square bg-[#F5F5F5] border-[4px] border-white flex items-center justify-center md:p-4 p-1">
-                <img src={logo} className="w-full" alt="" />
+                <img src={logo} className="w-full" alt="Technology stack logo" />
               </div>
             </div>
           ))}
@@ -505,7 +505,7 @@ export default CTASection;
 //     {[...techLogos, ...techLogos].map((logo, idx) => (
 //       <div key={idx} className="md:w-[90px] w-10 aspect-square">
 //         <div className="rounded-full w-full rotate-90 aspect-square bg-[#F5F5F5] border-[4px] border-white flex items-center justify-center md:p-4 p-1">
-//           <img src={logo} className="w-full" alt="" />
+//           <img src={logo} className="w-full" alt="Technology stack logo" />
 //         </div>
 //       </div>
 //     ))}
@@ -538,7 +538,7 @@ export default CTASection;
 //     {[...techLogoss, ...techLogoss].map((logo, idx) => (
 //       <div key={idx} className="md:w-[90px] w-10 aspect-square">
 //         <div className="rounded-full w-full rotate-90 aspect-square bg-[#F5F5F5] border-[4px] border-white flex items-center justify-center md:p-4 p-1">
-//           <img src={logo} className="w-full" alt="" />
+//           <img src={logo} className="w-full" alt="Technology stack logo" />
 //         </div>
 //       </div>
 //     ))}

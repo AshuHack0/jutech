@@ -56,14 +56,14 @@ export default function Improvement() {
               onClick={handleNext}
             >
               <div>
-                <h1 className="font-normal text-black text-[40px]">
+                <h2 className="font-normal text-black text-[40px]">
                   {card.id}
-                </h1>
+                </h2>
               </div>
               <div>
-                <h1 className="font-normal text-[40px] bg-gradient-to-r from-[#C0AEFE] via-[#6D39F3] to-[#3956EB] bg-clip-text text-transparent">
+                <h2 className="font-normal text-[40px] bg-gradient-to-r from-[#C0AEFE] via-[#6D39F3] to-[#3956EB] bg-clip-text text-transparent">
                   {card.title}
-                </h1>
+                </h2>
               </div>
             </motion.div>
           );
@@ -81,7 +81,7 @@ export default function Improvement() {
         <motion.img
           src="\gradients\gradient2.svg"
           className="w-full"
-          alt=""
+          alt="Continuous improvements phase - decorative gradient"
           animate={{
             y: [30, -30, 30],
             transition: {

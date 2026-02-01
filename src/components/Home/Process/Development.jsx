@@ -63,7 +63,7 @@ export default function Development() {
               onClick={() => setActiveIndex((prev) => (prev + 1) % data.length)}
               style={{ cursor: "pointer" }}
             >
-              <h1 className="text-[40px] font-normal">{item.id}</h1>
+              <h2 className="text-[40px] font-normal">{item.id}</h2>
               <p className="text-[40px] font-normal">{item.title}</p>
             </motion.div>
           </AnimatePresence>
@@ -79,7 +79,7 @@ export default function Development() {
         <motion.img
           src="\gradients\gradient2.svg"
           className="w-full"
-          alt=""
+          alt="Software development phase - decorative gradient"
           animate={{
             y: [30, -30, 30],
             transition: {

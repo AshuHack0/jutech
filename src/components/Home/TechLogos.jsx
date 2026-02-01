@@ -25,7 +25,7 @@ const TechLogos = ({ techLogos, hovering }) => {
         {[...techLogos, ...techLogos].map((logo, idx) => (
           <div key={idx} className="md:w-[100px] w-10 aspect-square">
             <div className="rounded-full w-full rotate-90 aspect-square bg-[#F5F5F5] border-[4px] border-white flex items-center justify-center p-4">
-              <img src={logo} className="w-full" alt="" role="presentation" />
+              <img src={logo} className="w-full" alt="Technology or framework logo" />
             </div>
           </div>
         ))}

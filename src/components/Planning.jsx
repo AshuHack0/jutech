@@ -50,7 +50,7 @@ const Planning = () => {
             repeatType: "reverse"
           }}
         >
-          <img src="/gradients/gradient1.svg" alt="" />
+          <img src="/gradients/gradient1.svg" alt="Decorative gradient background" />
         </motion.div>
 
         <div className="px-8">
@@ -63,15 +63,15 @@ const Planning = () => {
               animate={cardAnimationState}
               whileHover={{ scale: 1.03, boxShadow: "0px 8px 16px rgba(0, 0, 0, 0.1)" }}
             >
-              <h1 className="text-[9.5px] text-[#C4C6C5] font-medium">PLANNING</h1>
-              <h1 className="text-[12px] text-[#272727] font-medium">Strategic Planning</h1>
+              <h2 className="text-[9.5px] text-[#C4C6C5] font-medium">PLANNING</h2>
+              <h2 className="text-[12px] text-[#272727] font-medium">Strategic Planning</h2>
               <div className="w-full mt-2">
                 <div className="border-dotted border-l-[0.69px] border-b-[0.69px] py-[5px] border-[#EDEDED] flex items-center justify-center">
                   <div className="flex items-center gap-2 bg-[#F6F6F5] rounded-full p-[1.37px] w-fit pr-2">
                     <div className="bg-white h-4 w-4 rounded-full flex items-center justify-center">
-                      <img src="/svgs/leaf.svg" alt="" />
+                      <img src="/svgs/leaf.svg" alt="Growth and success icon" />
                     </div>
-                    <h1 className="font-normal text-[9.5px] text-[#545454] whitespace-nowrap">Success</h1>
+                    <h2 className="font-normal text-[9.5px] text-[#545454] whitespace-nowrap">Success</h2>
                   </div>
                 </div>
               </div>
@@ -86,8 +86,8 @@ const Planning = () => {
                 animate={cardAnimationState}
                 whileHover={{ scale: 1.03, boxShadow: "0px 8px 16px rgba(0, 0, 0, 0.1)" }}
               >
-                <h1 className="text-[9.5px] text-[#C4C6C5] font-medium">PLANNING</h1>
-                <h1 className="text-[12px] text-[#272727] font-medium">Resource Planning</h1>
+                <h2 className="text-[9.5px] text-[#C4C6C5] font-medium">PLANNING</h2>
+                <h2 className="text-[12px] text-[#272727] font-medium">Resource Planning</h2>
                 <div className="w-full mt-2">
                   <div className="border-dotted border-l-[0.69px] py-1 border-[#EDEDED] items-center justify-center">
                     <div className="w-[156px] h-[127px] relative -space-y-16 mx-auto">
@@ -104,8 +104,8 @@ const Planning = () => {
                         }}
                       >
                         <div className="flex flex-col bg-gradient-to-br from-[#C0AEFE] border-[0.79px] border-[#4A4DEE] via-[#6D39F3] to-[#3956EB] items-center justify-center rounded-full h-full w-full">
-                          <h1 className="font-medium text-[13px] text-white">Team</h1>
-                          <h1 className="font-normal text-[8px] text-white">Resources</h1>
+                          <h2 className="font-medium text-[13px] text-white">Team</h2>
+                          <h2 className="font-normal text-[8px] text-white">Resources</h2>
                         </div>
                       </motion.div>
                     </div>
@@ -121,8 +121,8 @@ const Planning = () => {
                 animate={cardAnimationState}
                 whileHover={{ scale: 1.03, boxShadow: "0px 8px 16px rgba(0, 0, 0, 0.1)" }}
               >
-                <h1 className="text-[9.5px] text-[#C4C6C5] font-medium">PLANNING</h1>
-                <h1 className="text-[12px] text-[#272727] font-medium">Timeline Planning</h1>
+                <h2 className="text-[9.5px] text-[#C4C6C5] font-medium">PLANNING</h2>
+                <h2 className="text-[12px] text-[#272727] font-medium">Timeline Planning</h2>
                 <div className="w-full mt-2 border-t-[0.69px] border-[#EDEDED] pt-2 flex flex-col gap-2">
                   {[
                     { name: 'Phase 1', progress: 90 },
@@ -139,12 +139,12 @@ const Planning = () => {
                     >
                       <div className="flex items-center gap-2">
                         <div className="h-[16px] aspect-square bg-[#292929] rounded-full w-4 flex items-center justify-center">
-                          <h1 className="text-[9px] font-medium text-white">
+                          <h2 className="text-[9px] font-medium text-white">
                             {index + 1}
-                          </h1>
+                          </h2>
                         </div>
                         <div className="leading-3">
-                          <h1 className="text-[#2A2A2A] text-[9.5px] font-medium">{phase.name}</h1>
+                          <h2 className="text-[#2A2A2A] text-[9.5px] font-medium">{phase.name}</h2>
                           <h2 className="text-[#C4C6C5] text-[8.2px] font-normal">Progress: {phase.progress}%</h2>
                         </div>
                       </div>

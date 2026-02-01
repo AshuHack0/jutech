@@ -73,14 +73,14 @@ export default function ProductMonitoring() {
               }}
             >
               <div>
-                <h1 className="font-normal text-black text-[39px]">
+                <h2 className="font-normal text-black text-[39px]">
                   {card.id}
-                </h1>
+                </h2>
               </div>
               <div>
-                <h1 className="font-normal text-[39px] bg-gradient-to-r from-[#C0AEFE] via-[#6D39F3] to-[#3956EB] bg-clip-text text-transparent">
+                <h2 className="font-normal text-[39px] bg-gradient-to-r from-[#C0AEFE] via-[#6D39F3] to-[#3956EB] bg-clip-text text-transparent">
                   {card.title}
-                </h1>
+                </h2>
               </div>
             </motion.div>
           );
@@ -97,7 +97,7 @@ export default function ProductMonitoring() {
         <motion.img
           src="\gradients\gradient2.svg"
           className="w-full"
-          alt=""
+          alt="Product monitoring phase - decorative gradient"
           animate={{
             y: [30, -30, 30],
             transition: {

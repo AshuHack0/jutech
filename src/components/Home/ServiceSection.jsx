@@ -194,7 +194,7 @@ export default function ServicesSection() {
                   }`}
                   width={24}
                   src={`/svgs/${services[service].svg}.svg`}
-                  alt=""
+                  alt={`${service} - service category icon`}
                 />
                 {service}
               </motion.span>
@@ -294,7 +294,7 @@ export default function ServicesSection() {
                     className="fill-black"
                     width={24}
                     src={`/svgs/${services[activeService].svg}.svg`}
-                    alt=""
+                    alt={`${activeService} - service icon`}
                   />
                   {activeService}
                 </motion.h2>
@@ -352,7 +352,7 @@ export default function ServicesSection() {
                           >
                             <motion.img
                               src={`/images/${item}.png`}
-                              alt=""
+                              alt={`${item} technology logo`}
                               whileHover={
                                 {
                                   // rotate: [0, -5, 5, 0],

@@ -75,16 +75,16 @@ export default function Planning() {
               onClick={() => handleCardClick(offset)}
             >
               <div>
-                <h1
+                <h2
                   className={`font-normal text-[40px] ${
                     isActive ? "text-white" : "text-black"
                   }`}
                 >
                   {card.id}
-                </h1>
+                </h2>
               </div>
               <div>
-                <h1
+                <h2
                   className={`font-normal text-[40px] ${
                     isActive
                       ? "text-white"
@@ -92,7 +92,7 @@ export default function Planning() {
                   }`}
                 >
                   {card.title}
-                </h1>
+                </h2>
               </div>
             </motion.div>
           );
@@ -110,7 +110,7 @@ export default function Planning() {
         <motion.img
           src="\gradients\gradient2.svg"
           className="w-full"
-          alt=""
+          alt="Strategic planning phase - decorative gradient"
           animate={{
             y: [30, -30, 30],
             transition: {
