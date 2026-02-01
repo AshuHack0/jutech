@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
 
     <!-- SEO: Crawler directives -->
     <meta name="robots" content="index, follow" />
     <meta name="googlebot" content="index, follow" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="./JutechFavicon.ico" />
+    <!-- Favicon (root-relative for correct resolution on all bases) -->
+    <link rel="icon" type="image/x-icon" href="/JutechFavicon.ico" />
+    <link rel="apple-touch-icon" href="/JutechFavicon.ico" />
 
     <!-- Canonical URL (avoid duplicate content) -->
     <link rel="canonical" href="https://jutech.co/" />
@@ -19,38 +21,39 @@
     <!-- Theme color (browser UI) -->
     <meta name="theme-color" content="#6D39F3" />
 
-    <!-- Primary meta -->
-    <title>JuTech | Software Technology Development Company & Digital Solutions</title>
+    <!-- Primary meta (title ~55 chars for SERP; description 150–160 chars) -->
+    <title>JuTech | Software Development & Digital Solutions</title>
+    <meta name="author" content="JuTech" />
     <meta
       name="description"
-      content="JuTech — Build Beyond Limits. We specialize in software technology development, web and mobile apps, cloud integration, and digital solutions that empower your business growth."
+      content="JuTech — Build Beyond Limits. Software development, web & mobile apps, cloud integration & digital solutions to scale your business. Book a call today."
     />
     <meta
       name="keywords"
-      content="software technology development, software development company, web app development, mobile app development, cloud solutions, SaaS development, UI UX design, API integration, software architecture, backend development, frontend development, agile software development, digital transformation, enterprise software, automation solutions, full-stack development, AI development, machine learning, data analytics, IoT solutions, blockchain development, software maintenance, QA testing"
+      content="software development company, web app development, mobile app development, cloud solutions, digital transformation, custom software, full-stack development, enterprise software, API integration, UI UX design, agile development, DevOps, QA testing"
     />
 
-    <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
+    <!-- Open Graph (Facebook, LinkedIn, WhatsApp) — add /og-image.jpg (1200×630) to public/ for previews -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://jutech.co/" />
-    <meta property="og:title" content="JuTech — Build Beyond Limits | Software Technology Development Solutions" />
+    <meta property="og:title" content="JuTech — Build Beyond Limits | Software Development & Digital Solutions" />
     <meta
       property="og:description"
-      content="Empowering businesses with scalable, custom-built software technology development solutions. Explore JuTech's expertise in web, mobile, cloud, and enterprise applications."
+      content="Custom software, web, mobile & cloud solutions that scale. JuTech helps businesses build beyond limits with integrated technology and digital solutions."
     />
     <meta property="og:image" content="https://jutech.co/og-image.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="JuTech — Software Technology Development Company" />
+    <meta property="og:image:alt" content="JuTech — Software Development & Digital Solutions" />
     <meta property="og:site_name" content="JuTech" />
     <meta property="og:locale" content="en_US" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="JuTech — Build Beyond Limits | Software Development Solutions" />
-    <meta name="twitter:description" content="Custom software, cloud, and digital solutions built to scale your business beyond limits." />
+    <meta name="twitter:title" content="JuTech — Build Beyond Limits | Software Development & Digital Solutions" />
+    <meta name="twitter:description" content="Custom software, cloud & digital solutions built to scale your business. Web, mobile & enterprise apps." />
     <meta name="twitter:image" content="https://jutech.co/og-image.jpg" />
-    <meta name="twitter:image:alt" content="JuTech — Software Technology Development Company" />
+    <meta name="twitter:image:alt" content="JuTech — Software Development & Digital Solutions" />
 
     <!-- Schema.org: Organization -->
     <script type="application/ld+json">
@@ -59,37 +62,49 @@
         "@type": "Organization",
         "name": "JuTech",
         "url": "https://jutech.co",
-        "logo": "https://jutech.co/og-image.jpg",
+        "logo": "https://jutech.co/JutechFavicon.ico",
         "sameAs": [
           "https://www.linkedin.com/company/jutech",
           "https://twitter.com/jutech"
         ],
-        "description": "JuTech provides software technology development solutions for businesses seeking scalable, innovative, and high-performance digital products."
+        "description": "JuTech provides software development and digital solutions for businesses seeking scalable, innovative web, mobile, and cloud applications."
       }
     </script>
-    <!-- Schema.org: WebSite + WebPage (homepage) -->
+    <!-- Schema.org: WebSite -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "JuTech",
         "url": "https://jutech.co",
-        "description": "Software technology development company. Build beyond limits with web, mobile, cloud, and digital solutions.",
+        "description": "Software development company. Build beyond limits with web, mobile, cloud, and digital solutions.",
         "publisher": {
           "@type": "Organization",
           "name": "JuTech",
-          "logo": { "@type": "ImageObject", "url": "https://jutech.co/og-image.jpg" }
+          "logo": { "@type": "ImageObject", "url": "https://jutech.co/JutechFavicon.ico" }
         }
       }
     </script>
+    <!-- Schema.org: WebPage -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "name": "JuTech | Software Technology Development Company & Digital Solutions",
+        "name": "JuTech | Software Development & Digital Solutions",
         "url": "https://jutech.co/",
         "description": "JuTech — Build Beyond Limits. Software development, web and mobile apps, cloud integration, and digital solutions for business growth.",
         "isPartOf": { "@type": "WebSite", "url": "https://jutech.co" }
+      }
+    </script>
+    <!-- Schema.org: ProfessionalService (software development) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "JuTech",
+        "url": "https://jutech.co",
+        "description": "Software development and digital solutions: custom web and mobile apps, cloud integration, API development, and enterprise software.",
+        "serviceType": ["Software Development", "Web Development", "Mobile App Development", "Cloud Solutions", "Digital Transformation"]
       }
     </script>
   </head>

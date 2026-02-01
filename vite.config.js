@@ -10,10 +10,10 @@ export default defineConfig({
     outDir: process.env.BUILD_OUT_DIR || 'dist',
   },
   server: {
-    allowedHosts: ['jutech.onrender.com', 'localhost'],
+    allowedHosts: ['jutech.onrender.com', 'https://jutech.co/', 'localhost'],
   },
   preview: {
-    allowedHosts: ['jutech.onrender.com', 'localhost'],
+    allowedHosts: ['jutech.onrender.com', 'https://jutech.co/', 'localhost'],
   },
   plugins: [react(), tailwindcss()],
 })

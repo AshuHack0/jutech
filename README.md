@@ -43,3 +43,10 @@ The site will be at **`https://your-username.github.io/JuTech/`** (or `/your-rep
 2. Push to `main` (or run the workflow from the **Actions** tab).
 
 The workflow builds with prerender and deploys automatically.
+
+## SEO
+
+- **Meta & social**: Title, description, keywords, Open Graph, and Twitter Card are set in `index.html`. Update `index.html` when changing site copy.
+- **Structured data**: Organization, WebSite, WebPage, and ProfessionalService (JSON-LD) are included for search and rich results.
+- **Sitemap & robots**: `public/sitemap.xml` and `public/robots.txt` are copied to the build. Update `lastmod` in `sitemap.xml` when you make significant content changes.
+- **OG image**: Add `public/og-image.jpg` (1200×630 px) for link previews on social and messaging. Without it, shares may show no image or a fallback.
