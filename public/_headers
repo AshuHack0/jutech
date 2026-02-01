@@ -1,0 +1,13 @@
+# Charset and content-type for HTML (Netlify)
+# Ensures charset encoding is sent in HTTP response for SEO and validators
+# X-Powered-By removed (empty) to avoid revealing tech stack (SEO best practice)
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  X-Powered-By:
+
+/index.html
+  Content-Type: text/html; charset=utf-8
+
+/*.html
+  Content-Type: text/html; charset=utf-8

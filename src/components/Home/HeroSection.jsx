@@ -143,7 +143,7 @@ const HeroSection = () => {
               ease: "easeInOut",
             }}
           >
-            Limits
+            Limits.
           </motion.span>
         </motion.h1>
 

@@ -50,3 +50,4 @@ The workflow builds with prerender and deploys automatically.
 - **Structured data**: Organization, WebSite, WebPage, and ProfessionalService (JSON-LD) are included for search and rich results.
 - **Sitemap & robots**: `public/sitemap.xml` and `public/robots.txt` are copied to the build. Update `lastmod` in `sitemap.xml` when you make significant content changes.
 - **OG image**: Add `public/og-image.jpg` (1200×630 px) for link previews on social and messaging. Without it, shares may show no image or a fallback.
+- **Charset in HTTP header**: `index.html` includes `meta charset` and `http-equiv="Content-Type"`. For Netlify and Vercel, `public/_headers` and `vercel.json` send `Content-Type: text/html; charset=utf-8`. On other hosts (e.g. Render), set this header in the dashboard if the option exists.

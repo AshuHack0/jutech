@@ -1,4 +1,4 @@
-import { Linkedin } from "lucide-react";
+import { Linkedin, Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -12,21 +12,21 @@ export default function Footer() {
       transition={{ duration: 0.8 }}
     >
       {/* Background decorative elements */}
-      <motion.h1 className="absolute -right-12 md:-top-10 -bottom-20 font-[700] text-[200px] md:text-[450px] text-[#E3E0E0]/30 -z-10">
+      <motion.span className="absolute -right-12 md:-top-10 -bottom-20 font-[700] text-[200px] md:text-[450px] text-[#E3E0E0]/30 -z-10 block" aria-hidden="true">
         JuTech
-      </motion.h1>
+      </motion.span>
 
       <div className="md:px-[90px] px-4 relative md:mt-10">
         <div className="flex flex-col md:flex-row items-start justify-between">
           {/* Left side - Logo, tagline and social */}
           <motion.div className="space-y-6">
             <motion.div className="flex items-center">
-              <h2 className="text-[30px] flex items-center">
-                <motion.h1 className="text-[30px] font-[600]">Ju</motion.h1>
-                <motion.h1 className="font-[400] text-[#6D39F3]">
+              <div className="text-[30px] flex items-center">
+                <motion.span className="text-[30px] font-[600]">Ju</motion.span>
+                <motion.span className="font-[400] text-[#6D39F3]">
                   Tech
-                </motion.h1>
-              </h2>
+                </motion.span>
+              </div>
             </motion.div>
             <motion.p className="text-[18px] font-[400] text-[#0A0A0A] w-[310px]">
               We build beyond limits, empowering businesses with innovative
@@ -65,12 +65,13 @@ export default function Footer() {
         </div>
 
         <div className="flex space-x-4 mt-10 justify-between items-end w-full">
-          <motion.div>
+          <motion.div className="flex gap-4">
             <Link
-              to="https://www.linkedin.com/company/106713603"
+              to="https://www.linkedin.com/company/jutechpteltd/"
               className="h-[60px] aspect-square bg-white border-[0.82px] border-[#E5E5E5] rounded-[14px] flex items-center justify-center group"
               aria-label="LinkedIn"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <motion.div
                 whileHover={{
@@ -82,6 +83,26 @@ export default function Footer() {
                 <Linkedin
                   size={21}
                   className="group-hover:fill-[#6D39F3] fill-black transition-colors duration-300"
+                />
+              </motion.div>
+            </Link>
+            <Link
+              to="https://www.instagram.com/jutechpteltd"
+              className="h-[60px] aspect-square bg-white border-[0.82px] border-[#E5E5E5] rounded-[14px] flex items-center justify-center group"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <motion.div
+                whileHover={{
+                  scale: 1.2,
+                  color: "#6D39F3",
+                  transition: { duration: 0.2 },
+                }}
+              >
+                <Instagram
+                  size={21}
+                  className="   transition-colors duration-300"
                 />
               </motion.div>
             </Link>

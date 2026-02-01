@@ -50,7 +50,7 @@ async function getLaunchOptions() {
 }
 
 const MIME = {
-  '.html': 'text/html',
+  '.html': 'text/html; charset=utf-8',
   '.js': 'application/javascript',
   '.css': 'text/css',
   '.json': 'application/json',

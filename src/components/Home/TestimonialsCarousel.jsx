@@ -5,7 +5,7 @@ import { Star, ChevronLeft, ChevronRight } from "lucide-react";
 const testimonials = [
   {
     stars: 5,
-    text: "JuTech team delivered beyond expectations. So far it has been fast, reliable, and always responsive. Akash and team was Truly a trusted for our day to day Tech development!",
+    text: "The JuTech team delivered beyond expectations. Before they came on board, our development cycles were lagging, but so far it has been fast, reliable, and always responsive. Akash and his team have become truly trusted partners for our day-to-day tech development. They don't just take tickets; they challenge our assumptions and offer more efficient technical alternatives that have saved us weeks of redundant work.",
     name: "Robert Chung",
     role: "Head of Growth - NovaTech Labs",
     avatar: "/testimonials/RobertChung.png",
@@ -13,7 +13,7 @@ const testimonials = [
   },
   {
     stars: 5,
-    text: "We improved performance significantly after working with them. The technical expertise and their partners Sumofame, they bring is impressive.",
+    text: "We improved performance significantly after working with them. Our legacy architecture was struggling under peak loads, leading to frequent latency issues that our internal team couldn't solve alone. The technical expertise they bring is pretty good I would say.. They didn't just suggest a quick fix; they re-engineered our core data pipelines, resulting in a 40% reduction in server response times during our busiest Q4 traffic.",
     name: "James Thornton",
     role: "CEO of CoreLogic Systems",
     avatar: "/testimonials/JamesThornton.png",
@@ -21,7 +21,7 @@ const testimonials = [
   },
   {
     stars: 5,
-    text: "Our product's user experience transformed completely. Their design approach is sharp and clean espicially UI.",
+    text: "Our product's user experience transformed completely. We had a high bounce rate on our onboarding page that we just couldn't crack. Their design approach is sharp and clean, especially the UI. By simplifying our user flow and modernizing the interface, they helped us increase our user retention rate by 25%. It’s not just 'pretty' design; it’s design that actually guides the user toward the intended action.",
     name: "Sophie",
     role: "Product Manager of PixelForge",
     avatar: "/testimonials/SophieLee.png",
@@ -29,7 +29,7 @@ const testimonials = [
   },
   {
     stars: 5,
-    text: "They felt like part of our in-house team. Efficient, proactive, and aligned with our long-term product vision and roadmap.",
+    text: "They felt like part of our in-house team. Usually, external vendors require constant hand-holding, but this group integrated into our Slack and Jira workflows overnight. Efficient, proactive, and aligned with our long-term product vision and roadmap. During our last pivot, they were the ones suggesting architecture adjustments before we even had the new requirements finalized, showing they were just as invested in our success as we are",
     name: "Liam Mitchell",
     role: "COO of Velocity Partners",
     avatar: "/testimonials/LiamMitchell.png",
@@ -37,7 +37,7 @@ const testimonials = [
   },
   {
     stars: 5,
-    text: "The ROI we've seen working with them has been exceptional. Our conversion rates doubled within 1.2 years.",
+    text: "The ROI we've seen working with them has been exceptional. As a solo investor, I’m used to agencies over-promising, but the transparency here was refreshing. Our conversion rates doubled within 1.2 years. What impressed me most was how they optimized our ad spend. I’m actually spending less on customer acquisition now than I was two years ago, while seeing much higher quality engagement..",
     name: "Advika Singh",
     role: "Indivudal investor",
     avatar: "/testimonials/AdvikaSingh.png",
@@ -245,6 +245,7 @@ const TestimonialsCarousel = () => {
                       </div>
                       <motion.p
                         className="text-3xl font-normal tracking-tight text-gray-800"
+                        style={{ fontSize: "24px" }}
                         variants={textVariants}
                       >
                         {testimonial.text}

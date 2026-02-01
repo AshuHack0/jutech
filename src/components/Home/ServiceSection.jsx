@@ -7,7 +7,7 @@ const services = {
     techStack: ["NODE", "PHP", "ASPDOTNET", "DJANGO", "FLASK", "GO"],
     databases: ["SQL", "NOSQL", "CLOUD"],
     description:
-      "The Future of Your Financial Solutions and Strategies is not just an exciting and transformative concept it represents a groundbreaking.",
+      "Empowering Your Vision with Custom Code We don’t just build applications; we engineer the future of your business. From complex enterprise systems to innovative startups, we deliver scalable, high-performance software tailored to your unique operational goals.",
     svg: "development",
   },
   "Website Development": {
@@ -15,14 +15,14 @@ const services = {
     Frontend: ["HTML", "CSS", "REACT", "ANGULAR1", "VIEW", "TAILWIND"],
     Backend: ["NODE", "PHP", "ASPDOTNET", "PYTHON"],
     description:
-      "W Fully tailored CMS solutions & responsive Design with SEO Optimization",
+      "High-Impact Web Experiences Elevate your digital presence with fully tailored CMS solutions and responsive designs. We blend aesthetic appeal with technical SEO to ensure your site doesn't just look great—it performs, ranks, and converts.",
     svg: "development1",
   },
   "Mobile App Development": {
     "Cross-Platform (ios & android)": ["FLUTTER", "DART"],
     Native: ["KOTLIN", "JAVA", "SWIFT", "C"],
     description:
-      "The Future of Your Financial Solutions and Strategies is not just an exciting and transformative concept it represents a groundbreaking. ",
+      "Seamless Mobile Innovation Bring your ideas to your users' fingertips. We specialize in cross-platform (iOS & Android) development, creating intuitive, high-speed mobile apps that provide a seamless experience across every device.",
     svg: "development2",
   },
   "Cloud Solutions": {
@@ -36,7 +36,7 @@ const services = {
       "OKTA",
       "AUTH0",
     ],
-    description: "Services: Setup, Migration, Scaling",
+    description: "Scalable Cloud Infrastructure Future-proof your business with our comprehensive cloud services. Whether you are looking for seamless migration, secure environment setup, or automated scaling, we ensure your data is accessible, safe, and cost-efficient.",
     svg: "cloudSloutions",
   },
 };
@@ -106,7 +106,7 @@ export default function ServicesSection() {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.7, delay: 0.2 }}
         >
-          <motion.h1
+          <motion.h2
             className="font-[400] md:text-[52px] text-4xl bg-clip-text text-transparent bg-gradient-to-r from-[#4885EF] via-[#C560CF] to-[#DA5381]"
             style={{ backgroundSize: "200% 100%" }}
             animate={{
@@ -120,15 +120,15 @@ export default function ServicesSection() {
             }}
           >
             Services We Offer
-          </motion.h1>
-          <motion.h1
+          </motion.h2>
+          <motion.h2
             className="font-[400] md:text-[52px] text-xl mt-2 md:mt-0"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
             Expert Skill Sets & Solutions
-          </motion.h1>
+          </motion.h2>
         </motion.div>
 
         <motion.div
@@ -163,14 +163,14 @@ export default function ServicesSection() {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
-          <motion.h1
+          <motion.h2
             className="font-[400] text-[28px] mb-[65px]"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.7 }}
           >
             Service Type
-          </motion.h1>
+          </motion.h2>
 
           {Object.keys(services).map((service, idx) => (
             <motion.button
